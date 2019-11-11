@@ -1,0 +1,3 @@
+administrator.spam.form.label.spamthreshold = Spamthreshold:
+administrator.spam.form.label.spamwords = Palabras spam:
+administrator.spam.form.button.return = Volver
