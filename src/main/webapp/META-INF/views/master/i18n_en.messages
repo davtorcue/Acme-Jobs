@@ -50,7 +50,7 @@ master.menu.provider.favourite-link = Favourite link
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
+master.menu.consumer.create.offer= Create offer
 
 # master.menu.user-account ####################################################
 
