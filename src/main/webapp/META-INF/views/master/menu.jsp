@@ -47,7 +47,9 @@
 	
 	<acme:menu-option code="master.menu.features" access="isAuthenticated()">
 	<acme:menu-suboption code="master.menu.user-account.offerlist" action="/authenticated/offer/list"/>
-	<acme:menu-suboption code="master.menu.challenge.list" action="/authenticated/challenge/list"/>
+	<acme:menu-suboption code="master.menu.challenge.list" action="/authenticated/challenge/list" access="!hasRole('Administrator')"/>
+	<acme:menu-suboption code="master.menu.challenge.list" action="/administrator/challenge/list" access="hasRole('Administrator')"/>
+	<acme:menu-suboption code="master.menu.challenge.create" action="/administrator/challenge/create" access="hasRole('Administrator')"/>
 	<acme:menu-suboption code="master.menu.investor-record.investor-record-list" action="/authenticated/investor-record/list"/>
 	<acme:menu-suboption code="master.menu.announcement.announcement-list" action="/authenticated/announcement/list" access="!hasRole('Administrator')"/>
 	<acme:menu-suboption code="master.menu.user-account.listRequest" action="/authenticated/request/list"/>
