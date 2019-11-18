@@ -51,8 +51,7 @@ master.menu.provider.createRequest = Crear Request
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
-master.menu.consumer.favourite-link = Enlace favorito
-
+master.menu.consumer.create.offer= Crear oferta
 # master.menu.challenge ####################################################
 
 master.menu.challenge.list = Desafíos
