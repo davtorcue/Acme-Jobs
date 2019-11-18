@@ -67,6 +67,7 @@ master.menu.user-account.offerlist = Offer list
 master.menu.announcement.announcement-list = Announcement List
 master.menu.investor-record.investor-record-list = Investor Records
 master.menu.authenticated.company-records.list = Company Records
+master.menu.administrator.announcement.create = Create an Announcement
 
 # master.menu.challenge ####################################################
 
