@@ -46,6 +46,7 @@ master.menu.administrator.showRequest = Show customisation parameters
 
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
+master.menu.provider.createRequest = Create Request
 
 # master.menu.consumer ##########################################################
 

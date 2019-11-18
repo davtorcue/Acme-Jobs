@@ -8,7 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.request.list.label.moment = Momento
+authenticated.request.list.label.reward = Recompensa
 authenticated.request.list.label.title = Titulo
 authenticated.request.list.label.deadline = Fecha limite
 
