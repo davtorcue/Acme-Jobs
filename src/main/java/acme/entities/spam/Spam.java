@@ -3,6 +3,7 @@ package acme.entities.spam;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.PositiveOrZero;
 
 import acme.framework.entities.DomainEntity;
@@ -17,8 +18,10 @@ public class Spam extends DomainEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@PositiveOrZero
+	@NotNull
 	private Double				spamthreshold;
 
 	@NotBlank
+	@NotNull
 	private String				spamwords;
 }

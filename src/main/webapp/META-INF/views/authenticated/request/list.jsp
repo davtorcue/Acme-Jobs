@@ -4,7 +4,6 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.request.list.label.moment" path="moment" width="20%"/>
 	<acme:list-column code="authenticated.request.list.label.title" path="title" width="20%"/>
 	<acme:list-column code="authenticated.request.list.label.deadline" path="deadline" width="20%"/>
 	<acme:list-column code="authenticated.request.list.label.reward" path="reward" width="20%"/>
