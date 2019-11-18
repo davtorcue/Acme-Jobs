@@ -71,6 +71,7 @@ master.menu.authenticated.company-records.list = Company Records
 # master.menu.challenge ####################################################
 
 master.menu.challenge.list = Challenges
+master.menu.challenge.create = Create Challenge
 
 # master.footer ###############################################################
 
