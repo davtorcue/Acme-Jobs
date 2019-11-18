@@ -36,6 +36,8 @@ master.menu.anonymous.company-records.list = Registros de empresa
 
 # master.menu.administrator ###################################################
 
+master.menu.administrator.company-records.create = Crear registro de empresa
+master.menu.administrator.company-records.list = Registros de empresa
 master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
