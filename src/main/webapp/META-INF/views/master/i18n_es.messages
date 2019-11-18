@@ -70,6 +70,7 @@ master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.investor-record.investor-record-list = Declaraciones de inversión
 master.menu.user-account.offerlist = Lista de Ofertas
 master.menu.authenticated.company-records.list = Registros de empresa
+master.menu.administrator.announcement.create = Crear un Anuncio
 
 
 ﻿# master.footer ###############################################################
