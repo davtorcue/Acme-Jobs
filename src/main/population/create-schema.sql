@@ -1,4 +1,5 @@
 
+
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -145,6 +146,7 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+create index IDXnhikaa2dj3la6o2o7e9vo01y0 on `announcement` (`moment`);
 
     alter table `offer` 
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);

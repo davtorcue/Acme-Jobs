@@ -43,16 +43,18 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.showRequest = Show customisation parameters
+master.menu.administrator.investor-record.list = Investor Records List
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
+master.menu.provider.createRequest = Create Request
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
+master.menu.consumer.create.offer= Create offer
 
 # master.menu.user-account ####################################################
 
@@ -68,10 +70,13 @@ master.menu.user-account.offerlist = Offer list
 master.menu.announcement.announcement-list = Announcement List
 master.menu.investor-record.investor-record-list = Investor Records
 master.menu.authenticated.company-records.list = Company Records
+master.menu.administrator.announcement.create = Create an Announcement
+master.menu.administrator.investor-record.create = Create an Investor Record
 
 # master.menu.challenge ####################################################
 
 master.menu.challenge.list = Challenges
+master.menu.challenge.create = Create Challenge
 
 # master.footer ###############################################################
 

@@ -43,20 +43,22 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.showRequest = Mostrar parametros de personalizacion
+master.menu.administrator.investor-record.list = Lista de Declaraciones de inversion
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.createRequest = Crear Request
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
-master.menu.consumer.favourite-link = Enlace favorito
-
+master.menu.consumer.create.offer= Crear oferta
 # master.menu.challenge ####################################################
 
 master.menu.challenge.list = Desafíos
+master.menu.challenge.create = Crear Desafíos
 
 
 # master.menu.user-account ####################################################
@@ -72,6 +74,8 @@ master.menu.announcement.announcement-list = Lista de anuncios
 master.menu.investor-record.investor-record-list = Declaraciones de inversión
 master.menu.user-account.offerlist = Lista de Ofertas
 master.menu.authenticated.company-records.list = Registros de empresa
+master.menu.administrator.announcement.create = Crear un Anuncio
+master.menu.administrator.investor-record.create = Crear una Declaración de inversion
 
 
 ﻿# master.footer ###############################################################
