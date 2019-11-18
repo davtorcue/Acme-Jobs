@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.offer;
+package acme.features.consumer.offer;
 
 import javax.annotation.PostConstruct;
 
@@ -8,29 +8,26 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import acme.entities.offers.Offer;
+import acme.entities.roles.Consumer;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/offer/")
-public class AuthenticatedOfferController extends AbstractController<Authenticated, Offer> {
+@RequestMapping("/consumer/offer/")
+public class ConsumerOfferController extends AbstractController<Consumer, Offer> {
 
 	//Internal State
 
 	@Autowired
-	private AuthenticatedOfferListService	listService;
-
-	@Autowired
-	private AuthenticatedOfferShowService	showService;
+	private ConsumerOfferCreateService createService;
 
 
 	//Constructors
 
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.LIST, this.listService);
-		super.addBasicCommand(BasicCommand.SHOW, this.showService);
-
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		//			super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
+
 }
