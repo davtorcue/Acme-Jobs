@@ -1,4 +1,5 @@
 administrator.spam.form.label.spamthreshold = Spamthreshold:
 administrator.spam.form.label.spamwords = Spam words:
 administrator.spam.form.button.return = Return
+administrator.spam.form.button.update = Update
  
