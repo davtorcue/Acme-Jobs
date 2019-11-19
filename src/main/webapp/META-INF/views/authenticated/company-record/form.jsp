@@ -11,7 +11,7 @@
 	<acme:form-textbox code="authenticated.company-records.list.label.phone" path="phone" />
 	<acme:form-textbox code="authenticated.company-records.list.label.email" path="email"/>
 	<acme:form-textbox code="authenticated.company-records.list.label.stars" path="stars" />
-	<acme:form-textbox code="authenticated.company-records.list.label.incorporated" path="incorporated" />
+	<acme:form-checkbox code="authenticated.company-records.list.label.incorporated" path="incorporated" />
 	
 	<acme:form-return code="authenticated.company-records.form.button.return"/>
 	

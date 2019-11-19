@@ -6,6 +6,6 @@ anonymous.company-records.list.label.email = Email
 anonymous.company-records.list.label.stars = Estrellas
 anonymous.company-records.list.label.ceoname = Nombre del CEO
 anonymous.company-records.list.label.phone = Teléfono
-anonymous.company-records.list.label.incorporated = ¿Está incorporada?
+anonymous.company-records.list.label.incorporated = Incorporada
 
 anonymous.company-records.button.return= Volver
