@@ -6,7 +6,7 @@ administrator.company-records.list.label.web = Website
 administrator.company-records.list.label.phone = Phone
 administrator.company-records.list.label.email = Email
 administrator.company-records.list.label.stars = Stars
-administrator.company-records.list.label.incorporated = Is incorporated?
+administrator.company-records.list.label.incorporated = Incorporated
 
 administrator.company-records.form.button.update = Update
 administrator.company-records.form.button.delete = Delete

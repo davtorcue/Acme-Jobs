@@ -11,7 +11,7 @@
 	<acme:form-textbox code="administrator.company-records.list.label.phone" path="phone" />
 	<acme:form-textbox code="administrator.company-records.list.label.email" path="email" />
 	<acme:form-textbox code="administrator.company-records.list.label.stars" path="stars" />
-	<acme:form-textbox code="administrator.company-records.list.label.incorporated" path="incorporated" />
+	<acme:form-checkbox code="administrator.company-records.list.label.incorporated" path="incorporated" />
 
 	<acme:form-submit test="${command == 'show'}" code="administrator.company-records.form.button.update"
 		action="/administrator/company-record/update" />
