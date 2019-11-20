@@ -36,14 +36,16 @@ master.menu.anonymous.company-records.list = Company Records
 
 # master.menu.administrator ###################################################
 
-master.menu.administrator.company-records.create = Company record create
+master.menu.administrator.company-records.create =  Create company record
 master.menu.administrator.company-records.list = Company records
-master.menu.announcement.announcement-list = Announcement List
+master.menu.announcement.announcement-list = Announcements
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.showRequest = Show customisation parameters
-master.menu.administrator.investor-record.list = Investor Records List
+master.menu.administrator.investor-record.list = Investor Records
+master.menu.administrator.announcement.create = Create announcement
+master.menu.administrator.investor-record.create = Create investor record
 
 # master.menu.provider ########################################################
 
@@ -58,20 +60,21 @@ master.menu.consumer.create.offer= Create offer
 
 # master.menu.user-account ####################################################
 
-master.menu.features = Features
+master.menu.features = Authenticated
 master.menu.user-account = Account
 master.menu.user-account.general-data = General data
 master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
-master.menu.user-account.listRequest = List Requests
-master.menu.user-account.offerlist = Offer list
-master.menu.announcement.announcement-list = Announcement List
+master.menu.user-account.listRequest = Requests
+master.menu.user-account.offerlist = Offers
+master.menu.announcement.announcement-list = Announcements
 master.menu.investor-record.investor-record-list = Investor Records
 master.menu.authenticated.company-records.list = Company Records
-master.menu.administrator.announcement.create = Create an Announcement
-master.menu.administrator.investor-record.create = Create an Investor Record
+master.menu.administrator.announcement.create = Create announcement
+
+
 
 # master.menu.challenge ####################################################
 
