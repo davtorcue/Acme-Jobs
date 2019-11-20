@@ -90,6 +90,16 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 			errors.state(request, existing == null, "ticker", "consumer.offer.ticker.error");
 		}
 
+		if (!errors.hasErrors("minmoney")) {
+			Money min = entity.getMinmoney();
+			errors.state(request, min.getCurrency().contentEquals("EUR") || min.getCurrency().contentEquals("€"), "minmoney", "consumer.offer.minmoney.currency.error");
+		}
+
+		if (!errors.hasErrors("maxmoney")) {
+			Money max = entity.getMaxmoney();
+			errors.state(request, max.getCurrency().contentEquals("EUR") || max.getCurrency().contentEquals("€"), "maxmoney", "consumer.offer.maxmoney.currency.error");
+		}
+
 		if (!errors.hasErrors("minmoney") || !errors.hasErrors("maxmoney")) {
 			Money min = entity.getMinmoney();
 			Money max = entity.getMaxmoney();
@@ -105,16 +115,6 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 		//			Money max = entity.getMaxmoney();
 		//			errors.state(request, max.getAmount() >= 0, "maxmoney", "consumer.offer.maxmoney.positive");
 		//		}
-
-		if (!errors.hasErrors("minmoney")) {
-			Money min = entity.getMinmoney();
-			errors.state(request, min.getCurrency().contentEquals("EUR") || min.getCurrency().contentEquals("€"), "minmoney", "consumer.offer.minmoney.currency.error");
-		}
-
-		if (!errors.hasErrors("maxmoney")) {
-			Money max = entity.getMaxmoney();
-			errors.state(request, max.getCurrency().contentEquals("EUR") || max.getCurrency().contentEquals("€"), "maxmoney", "consumer.offer.maxmoney.currency.error");
-		}
 
 	}
 
