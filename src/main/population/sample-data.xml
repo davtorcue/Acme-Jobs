@@ -72,7 +72,6 @@
 		<property name="title" value="your first challenge"/>
 		<property name="deadline" value="2020/10/10 19:10"/>
 		<property name="description" value="this is your first challenge"/>
-		<property name="level" value="BRONZE"/>
 		<property name="goalBronze" value="goal B"/>
 		<property name="rewardBronze" value="EUR 30"/>
 		<property name="goalSilver" value="goal S"/>
@@ -85,7 +84,6 @@
 		<property name="title" value="your second challenge"/>
 		<property name="deadline" value="2019/12/11 17:15"/>
 		<property name="description" value="this is your second challenge"/>
-		<property name="level" value="SILVER"/>
 		<property name="goalBronze" value="goal B"/>
 		<property name="rewardBronze" value="EUR 30"/>
 		<property name="goalSilver" value="goal S"/>
@@ -98,7 +96,6 @@
 		<property name="title" value="your third and last challenge :P"/>
 		<property name="deadline" value="2100/12/10 20:00"/>
 		<property name="description" value="this is your last challenge"/>
-		<property name="level" value="GOLD"/>
 		<property name="goalBronze" value="goal B"/>
 		<property name="rewardBronze" value="EUR 30"/>
 		<property name="goalSilver" value="goal S"/>

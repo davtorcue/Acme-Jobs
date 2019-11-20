@@ -1,6 +1,10 @@
 
 package acme.features.administrator.challenge;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,7 +44,7 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "deadline", "description", "level", "goalBronze", "rewardBronze", "goalSilver", "rewardSilver", "goalGold", "rewardGold");
+		request.unbind(entity, model, "title", "deadline", "description", "goalBronze", "rewardBronze", "goalSilver", "rewardSilver", "goalGold", "rewardGold");
 	}
 
 	@Override
@@ -61,16 +65,45 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		boolean isValid;
+		boolean isValidB, isValidS, isValidG;
+		Calendar calendar;
+		Date minimumDeadline;
+		isValidB = false;
+		isValidS = false;
+		isValidG = false;
 
-		isValid = entity.getRewardBronze().getCurrency().contentEquals("€") || entity.getRewardBronze().getCurrency().contentEquals("EUR");
-		errors.state(request, isValid, "rewardBronze", "administrator.challenge.form.error.invalidmoney");
+		if (!errors.hasErrors("rewardBronze")) {
+			isValidB = entity.getRewardBronze().getCurrency().contentEquals("€") || entity.getRewardBronze().getCurrency().contentEquals("EUR");
+			errors.state(request, isValidB, "rewardBronze", "administrator.challenge.form.error.invalidmoney");
 
-		isValid = entity.getRewardSilver().getCurrency().contentEquals("€") || entity.getRewardSilver().getCurrency().contentEquals("EUR");
-		errors.state(request, isValid, "rewardSilver", "administrator.challenge.form.error.invalidmoney");
+		}
+		if (!errors.hasErrors("rewardSilver")) {
+			isValidS = entity.getRewardSilver().getCurrency().contentEquals("€") || entity.getRewardSilver().getCurrency().contentEquals("EUR");
+			errors.state(request, isValidS, "rewardSilver", "administrator.challenge.form.error.invalidmoney");
 
-		isValid = entity.getRewardGold().getCurrency().contentEquals("€") || entity.getRewardGold().getCurrency().contentEquals("EUR");
-		errors.state(request, isValid, "rewardGold", "administrator.challenge.form.error.invalidmoney");
+		}
+		if (!errors.hasErrors("rewardGold")) {
+			isValidG = entity.getRewardGold().getCurrency().contentEquals("€") || entity.getRewardGold().getCurrency().contentEquals("EUR");
+			errors.state(request, isValidG, "rewardGold", "administrator.challenge.form.error.invalidmoney");
+
+		}
+		if (isValidB && isValidS) {
+			if (!errors.hasErrors("rewardBronze") && !errors.hasErrors("rewardSilver")) {
+				errors.state(request, entity.getRewardBronze().getAmount() < entity.getRewardSilver().getAmount(), "rewardSilver", "administrator.challenge.form.error.invalidreward");
+			}
+		}
+		if (isValidS && isValidG) {
+			if (!errors.hasErrors("rewardSilver") && !errors.hasErrors("rewardGold")) {
+				errors.state(request, entity.getRewardSilver().getAmount() < entity.getRewardGold().getAmount(), "rewardGold", "administrator.challenge.form.error.invalidreward");
+			}
+		}
+		if (!errors.hasErrors("deadline")) {
+			calendar = new GregorianCalendar();
+			calendar.add(Calendar.DAY_OF_MONTH, 7);
+			minimumDeadline = calendar.getTime();
+			errors.state(request, entity.getDeadline().after(minimumDeadline), "deadline", "administrator.challenge.form.error.invaliddeadline");
+		}
+
 	}
 
 	@Override

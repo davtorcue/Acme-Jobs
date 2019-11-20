@@ -1,4 +1,5 @@
 
+
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -38,7 +39,6 @@
         `goal_bronze` varchar(255),
         `goal_gold` varchar(255),
         `goal_silver` varchar(255),
-        `level` integer,
         `reward_bronze_amount` double precision,
         `reward_bronze_currency` varchar(255),
         `reward_gold_amount` double precision,
@@ -98,14 +98,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `parameter` (
-       `id` integer not null,
-        `version` integer not null,
-        `spamthreshold` double precision,
-        `spamwords` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
@@ -125,6 +117,14 @@
         `text` varchar(255),
         `ticker` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `spam` (
+       `id` integer not null,
+        `version` integer not null,
+        `spamthreshold` double precision,
+        `spamwords` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
