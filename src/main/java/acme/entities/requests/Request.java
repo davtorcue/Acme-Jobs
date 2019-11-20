@@ -29,6 +29,7 @@ public class Request extends DomainEntity {
 	@NotNull
 	private String				title;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	private Date				moment;

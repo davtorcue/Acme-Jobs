@@ -1,10 +1,10 @@
 
-package acme.features.administrator.spam;
+package acme.features.administrator.parameter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.spam.Spam;
+import acme.entities.parameters.Parameter;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -12,21 +12,21 @@ import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractUpdateService;
 
 @Service
-public class AdministratorSpamUpdateService implements AbstractUpdateService<Administrator, Spam> {
+public class AdministratorParameterUpdateService implements AbstractUpdateService<Administrator, Parameter> {
 
 	@Autowired
-	AdministratorSpamRepository repository;
+	AdministratorParameterRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Spam> request) {
+	public boolean authorise(final Request<Parameter> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void bind(final Request<Spam> request, final Spam entity, final Errors errors) {
+	public void bind(final Request<Parameter> request, final Parameter entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -35,7 +35,7 @@ public class AdministratorSpamUpdateService implements AbstractUpdateService<Adm
 	}
 
 	@Override
-	public void unbind(final Request<Spam> request, final Spam entity, final Model model) {
+	public void unbind(final Request<Parameter> request, final Parameter entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -44,16 +44,16 @@ public class AdministratorSpamUpdateService implements AbstractUpdateService<Adm
 	}
 
 	@Override
-	public Spam findOne(final Request<Spam> request) {
+	public Parameter findOne(final Request<Parameter> request) {
 		assert request != null;
 
-		Spam result;
+		Parameter result;
 		result = this.repository.findManyAll().stream().findFirst().get();
 		return result;
 	}
 
 	@Override
-	public void validate(final Request<Spam> request, final Spam entity, final Errors errors) {
+	public void validate(final Request<Parameter> request, final Parameter entity, final Errors errors) {
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -61,7 +61,7 @@ public class AdministratorSpamUpdateService implements AbstractUpdateService<Adm
 	}
 
 	@Override
-	public void update(final Request<Spam> request, final Spam entity) {
+	public void update(final Request<Parameter> request, final Parameter entity) {
 		assert request != null;
 		assert entity != null;
 

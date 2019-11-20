@@ -37,11 +37,11 @@
 
     drop table if exists `offer`;
 
+    drop table if exists `parameter`;
+
     drop table if exists `provider`;
 
     drop table if exists `request`;
-
-    drop table if exists `spam`;
 
     drop table if exists `user_account`;
 

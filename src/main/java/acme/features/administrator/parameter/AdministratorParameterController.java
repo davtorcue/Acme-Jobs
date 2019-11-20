@@ -1,5 +1,5 @@
 
-package acme.features.administrator.spam;
+package acme.features.administrator.parameter;
 
 import javax.annotation.PostConstruct;
 
@@ -7,20 +7,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.spam.Spam;
+import acme.entities.parameters.Parameter;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/administrator/spam/")
-public class AdministratorSpamController extends AbstractController<Administrator, Spam> {
+@RequestMapping("/administrator/parameter/")
+public class AdministratorParameterController extends AbstractController<Administrator, Parameter> {
 
 	@Autowired
-	private AdministratorSpamShowService	showService;
+	private AdministratorParameterShowService	showService;
 
 	@Autowired
-	private AdministratorSpamUpdateService	updateService;
+	private AdministratorParameterUpdateService	updateService;
 
 
 	@PostConstruct
