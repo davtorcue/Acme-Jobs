@@ -1,5 +1,4 @@
 
-
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -39,7 +38,6 @@
         `goal_bronze` varchar(255),
         `goal_gold` varchar(255),
         `goal_silver` varchar(255),
-        `level` integer,
         `reward_bronze_amount` double precision,
         `reward_bronze_currency` varchar(255),
         `reward_gold_amount` double precision,
