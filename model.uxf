@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>518</x>
+      <x>581</x>
       <y>168</y>
       <w>168</w>
       <h>42</h>
@@ -18,7 +18,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>539</x>
+      <x>602</x>
       <y>203</y>
       <w>70</w>
       <h>77</h>
@@ -29,7 +29,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>168</x>
+      <x>231</x>
       <y>98</y>
       <w>154</w>
       <h>84</h>
@@ -49,7 +49,7 @@ bg=orange
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>168</x>
+      <x>231</x>
       <y>35</y>
       <w>168</w>
       <h>42</h>
@@ -62,7 +62,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>238</x>
+      <x>301</x>
       <y>70</y>
       <w>21</w>
       <h>42</h>
@@ -74,7 +74,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
+      <x>651</x>
       <y>203</y>
       <w>70</w>
       <h>77</h>
@@ -85,7 +85,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>763</x>
+      <x>826</x>
       <y>175</y>
       <w>70</w>
       <h>42</h>
@@ -100,7 +100,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>763</x>
+      <x>826</x>
       <y>119</y>
       <w>70</w>
       <h>42</h>
@@ -115,7 +115,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>763</x>
+      <x>826</x>
       <y>224</y>
       <w>70</w>
       <h>42</h>
@@ -130,7 +130,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>679</x>
+      <x>742</x>
       <y>147</y>
       <w>98</w>
       <h>56</h>
@@ -141,7 +141,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>679</x>
+      <x>742</x>
       <y>182</y>
       <w>98</w>
       <h>21</h>
@@ -152,7 +152,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>679</x>
+      <x>742</x>
       <y>182</y>
       <w>98</w>
       <h>63</h>
@@ -163,7 +163,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>168</x>
+      <x>231</x>
       <y>196</y>
       <w>154</w>
       <h>49</h>
@@ -179,7 +179,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>441</x>
+      <x>504</x>
       <y>266</y>
       <w>140</w>
       <h>63</h>
@@ -194,7 +194,7 @@ Provider
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>602</x>
+      <x>665</x>
       <y>266</y>
       <w>147</w>
       <h>63</h>
@@ -209,7 +209,7 @@ Consumer
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>63</x>
       <y>98</y>
       <w>154</w>
       <h>56</h>
@@ -226,7 +226,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>63</x>
       <y>168</y>
       <w>154</w>
       <h>91</h>
@@ -246,7 +246,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>63</x>
       <y>273</y>
       <w>154</w>
       <h>63</h>
@@ -263,7 +263,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>476</x>
+      <x>539</x>
       <y>0</y>
       <w>238</w>
       <h>91</h>
@@ -285,7 +285,7 @@ UserAccount
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>595</x>
+      <x>658</x>
       <y>84</y>
       <w>49</w>
       <h>98</h>
@@ -299,38 +299,38 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>77</x>
-      <y>392</y>
-      <w>70</w>
-      <h>21</h>
+      <x>483</x>
+      <y>623</y>
+      <w>231</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>Request
 --
 + title: String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past}
-+ deadline: Date {Temporal(TIMESTAMP)}
++ deadline: Date {Temporal(TIMESTAMP), NotNull}
 + text: String {NotBlank}
 + ticker: String {NotBlank,Column(unique = true),
 	Pattern(regexp = "^R[A-Z]{4}\\-\\d{5}$")}
-+ reward: Money {Valid}</panel_attributes>
++ reward: Money {Valid, NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>210</x>
-      <y>329</y>
-      <w>77</w>
-      <h>21</h>
+      <x>707</x>
+      <y>483</y>
+      <w>224</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>Offer
 --
 +title: String {NotBlank}
 +moment: Date {Temporal(TIMESTAMP),Past}
-+text: String{NotBlank}
-+deadline: Date{Temporal(TIMESTAMP)}
-+minmoney: Integer{Valid}
-+maxmoney: Integer{Valid}
++text: String{NotBlank, NotNull}
++deadline: Date{Temporal(TIMESTAMP), NotNull}
++minmoney: Integer{Valid, NotNull}
++maxmoney: Integer{Valid, NotNull}
 +ticker: String {NotBlank, Column(unique = true),
 Pattern(regexp = "^O[A-Z]{4}\\-\\d{5}$")}</panel_attributes>
     <additional_attributes/>
@@ -338,24 +338,24 @@ Pattern(regexp = "^O[A-Z]{4}\\-\\d{5}$")}</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>301</x>
-      <y>357</y>
-      <w>70</w>
-      <h>21</h>
+      <x>602</x>
+      <y>364</y>
+      <w>196</w>
+      <h>49</h>
     </coordinates>
-    <panel_attributes>Spam
+    <panel_attributes>Parameters
 --
 + spamwords: String {NotBlank}
-+ spamthreshold: Double {PositiveOrZero}</panel_attributes>
++ spamthreshold: Double {PositiveOrZero, NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>203</x>
-      <y>406</y>
-      <w>70</w>
-      <h>21</h>
+      <x>315</x>
+      <y>343</y>
+      <w>189</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>InvestRecord
 --
@@ -368,10 +368,10 @@ Pattern(regexp = "^O[A-Z]{4}\\-\\d{5}$")}</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>112</x>
-      <y>455</y>
-      <w>70</w>
-      <h>21</h>
+      <x>133</x>
+      <y>441</y>
+      <w>231</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>Announcement
 --
@@ -384,32 +384,31 @@ Pattern(regexp = "^O[A-Z]{4}\\-\\d{5}$")}</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>266</x>
+      <x>441</x>
       <y>448</y>
-      <w>70</w>
-      <h>21</h>
+      <w>217</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>Challenge
 --
 + title: String {NotBlank}
-+ deadline: Date {Temporal(TIMESTAMP)}
++ deadline: Date {Temporal(TIMESTAMP), NotNull}
 + description: String {NotBlank}
-+ level: TipoGoal {Valid}
 + goalBronze: String {NotBlank}
-+ rewardBronze: Money {Valid}
++ rewardBronze: Money {Valid, NotNull}
 + goalSilver: String {NotBlank}
-+ rewardSilver: Money {Valid}
++ rewardSilver: Money {Valid, NotNull}
 + goalGold: String {NotBlank}
-+ rewardGold: Money {Valid}</panel_attributes>
++ rewardGold: Money {Valid, NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>196</x>
-      <y>490</y>
-      <w>70</w>
-      <h>21</h>
+      <x>0</x>
+      <y>539</y>
+      <w>406</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>CompanyRecord
 --
@@ -421,7 +420,7 @@ Pattern(regexp = "^O[A-Z]{4}\\-\\d{5}$")}</panel_attributes>
 +phone: String {NotBlank,Pattern(regexp = "^([+]\\d{1,3}\\s)?([(]\\d{1,4}[)]\\s)?\\d{6,10}$") }
 +email: String {Email, NotBlank}
 +stars: Integer {Max(5), Min(0)}
-+incorporated : Boolean {NotNull}</panel_attributes>
++incorporated : boolean {NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

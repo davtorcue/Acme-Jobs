@@ -26,7 +26,7 @@
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
-      <acme:menu-suboption code="master.menu.administrator.showRequest" action="/administrator/parameter/show"/>
+      <acme:menu-suboption code="master.menu.administrator.showParameter" action="/administrator/parameter/show"/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.company-records.list" action="/administrator/company-record/list"/>
 			<acme:menu-suboption code="master.menu.announcement.announcement-list" action="/administrator/announcement/list"/>
@@ -41,7 +41,6 @@
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
-			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>
 			<acme:menu-suboption code="master.menu.provider.createRequest" action="/provider/request/create"/>
 		</acme:menu-option>
 

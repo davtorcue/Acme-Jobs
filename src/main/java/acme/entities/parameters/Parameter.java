@@ -22,6 +22,5 @@ public class Parameter extends DomainEntity {
 	private Double				spamthreshold;
 
 	@NotBlank
-	@NotNull
 	private String				spamwords;
 }

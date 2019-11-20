@@ -1,5 +1,4 @@
 
-
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -55,7 +54,7 @@
         `ceoname` varchar(255),
         `description` varchar(255),
         `email` varchar(255),
-        `incorporated` bit,
+        `incorporated` bit not null,
         `name` varchar(255),
         `phone` varchar(255),
         `sector` varchar(255),
@@ -98,6 +97,14 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `parameter` (
+       `id` integer not null,
+        `version` integer not null,
+        `spamthreshold` double precision,
+        `spamwords` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
@@ -117,14 +124,6 @@
         `text` varchar(255),
         `ticker` varchar(255),
         `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `spam` (
-       `id` integer not null,
-        `version` integer not null,
-        `spamthreshold` double precision,
-        `spamwords` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
