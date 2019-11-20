@@ -1,30 +1,30 @@
 
-package acme.features.administrator.spam;
+package acme.features.administrator.parameter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.spam.Spam;
+import acme.entities.parameters.Parameter;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AdministratorSpamShowService implements AbstractShowService<Administrator, Spam> {
+public class AdministratorParameterShowService implements AbstractShowService<Administrator, Parameter> {
 
 	@Autowired
-	private AdministratorSpamRepository repository;
+	private AdministratorParameterRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Spam> request) {
+	public boolean authorise(final Request<Parameter> request) {
 		assert request != null;
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Spam> request, final Spam entity, final Model model) {
+	public void unbind(final Request<Parameter> request, final Parameter entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -34,10 +34,10 @@ public class AdministratorSpamShowService implements AbstractShowService<Adminis
 	}
 
 	@Override
-	public Spam findOne(final Request<Spam> request) {
+	public Parameter findOne(final Request<Parameter> request) {
 		assert request != null;
 
-		Spam result;
+		Parameter result;
 		result = this.repository.findManyAll().stream().findFirst().get();
 		return result;
 	}

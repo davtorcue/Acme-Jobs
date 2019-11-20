@@ -107,8 +107,8 @@
 		<property name="rewardGold" value="EUR 50"/>
 	</bean>
     
-    <!-- Spam -->
-	<bean id="spam" class= "acme.entities.spam.Spam">
+    <!-- Parameter -->
+	<bean id="parameter" class= "acme.entities.parameters.Parameter">
 		<property name= "spamwords" value="sex, hard core, viagra, cialis, nigeria, you`ve won, million dollar"/>
 		<property name= "spamthreshold" value= "1.0"/>
 	</bean>
