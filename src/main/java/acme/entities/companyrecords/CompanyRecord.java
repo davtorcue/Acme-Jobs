@@ -37,6 +37,6 @@ public class CompanyRecord extends DomainEntity {
 	@Min(0)
 	private Integer				stars;
 	@NotNull
-	private Boolean				incorporated;
+	private boolean				incorporated;
 
 }

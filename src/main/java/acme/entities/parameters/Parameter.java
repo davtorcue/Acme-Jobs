@@ -1,5 +1,5 @@
 
-package acme.entities.spam;
+package acme.entities.parameters;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
@@ -13,7 +13,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Spam extends DomainEntity {
+public class Parameter extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
