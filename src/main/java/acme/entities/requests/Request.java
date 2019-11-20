@@ -26,10 +26,8 @@ public class Request extends DomainEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
-	@NotNull
 	private String				title;
 
-	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	private Date				moment;
@@ -39,7 +37,6 @@ public class Request extends DomainEntity {
 	private Date				deadline;
 
 	@NotBlank
-	@NotNull
 	private String				text;
 
 	@NotBlank

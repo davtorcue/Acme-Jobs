@@ -20,7 +20,7 @@
 	<acme:form-textarea code="provider.request.form.label.text" path="text"/>
 	<acme:form-moment code="provider.request.form.label.deadline" path="deadline"/>
 	<acme:form-money code="provider.request.form.label.reward" path="reward"/>
-	<acme:form-textbox code="provider.request.form.label.ticker" path="ticker" placeholder="OXXXX-99999"/>
+	<acme:form-textbox code="provider.request.form.label.ticker" path="ticker" placeholder="RXXXX-99999"/>
 	<jstl:if test="${command != 'create'}">
 		<acme:form-moment code="provider.request.form.label.moment" path="moment" readonly="true"/>
 	</jstl:if>
